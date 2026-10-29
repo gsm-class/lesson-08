@@ -15,17 +15,17 @@ q = n
 while q > 0:
     # r = q % b
     # q = q // b
-    q, r = divmod(q, b)
+    # pass
     
     if r < 10:
-        result_list.append(str(r))
+        # pass
     else:
         # r-10 => 0 ~ 25
         # r-10+ord('A') => ord('A') ~ ord('Z')
         # chr(r-10+ord('A')) => 'A' ~ 'Z'
 
-        result_list.append(chr(r-10+ord('A')))
+        # pass
 
     # result_list.append(char_map_str[r])
 
-print("".join(result_list[::-1]))
+print("".join(result_list[::-1]) or "0")
